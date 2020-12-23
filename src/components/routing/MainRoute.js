@@ -4,6 +4,8 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Header from "../ui/Header";
 import theme from "../ui/Theme";
+import LetsTalk from "../ui/footer/LetsTalk";
+import Footer from "../ui/footer/Footer";
 
 function MainRoute() {
   const [value, setValue] = useState(0);
@@ -164,6 +166,8 @@ function MainRoute() {
             component={() => <div>Web Development</div>}
           />
         </Switch>
+        <LetsTalk />
+        <Footer />
       </BrowserRouter>
     </ThemeProvider>
   );
