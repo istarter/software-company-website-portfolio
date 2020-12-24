@@ -140,7 +140,14 @@ export default function LetsTalk() {
           </Typography>
         </Grid>
 
-        <Grid item>
+        <Grid
+          item
+          style={{
+            marginTop: "1em",
+            marginLeft: matchesMD ? "2em" : undefined,
+            marginRight: matchesMD ? "2em" : undefined,
+          }}
+        >
           <Typography align="center" variant="subtitle2" paragraph>
             We would be delighted to discuss your project with you.
           </Typography>

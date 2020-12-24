@@ -6,6 +6,7 @@ import Header from "../ui/Header";
 import theme from "../ui/Theme";
 import LetsTalk from "../ui/footer/LetsTalk";
 import Footer from "../ui/footer/Footer";
+import HomePage from "../../pages/Home";
 
 function MainRoute() {
   const [value, setValue] = useState(0);
@@ -30,7 +31,7 @@ function MainRoute() {
             //     setSelectedIndex={setSelectedIndex}
             //   />
             // )}
-            component={() => <div>Home</div>}
+            component={HomePage}
           />
 
           <Route

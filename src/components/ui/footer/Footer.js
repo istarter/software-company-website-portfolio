@@ -61,6 +61,12 @@ const useStyles = makeStyles((theme) => ({
       color: "black",
     },
   },
+  menuItem: {
+    lineHeight: 2.4,
+    fontSize: 14,
+    marginTop: 5,
+    fontWeight: "bold",
+  },
 }));
 
 export default function Footer() {
@@ -90,7 +96,7 @@ export default function Footer() {
           direction="column"
           style={{
             marginTop: "3em",
-            marginLeft: matchesMD ? "2em" : matchesLG ? "3em" : "5em",
+            marginLeft: matchesMD ? 0 : matchesLG ? "3em" : "5em",
             maxWidth: "15em",
           }}
         >
@@ -102,19 +108,26 @@ export default function Footer() {
             spacing={3}
             container
             style={{ marginTop: "1.5em", marginBottom: "1.5em" }}
+            justify={matchesMD ? "center" : undefined}
           >
             <RenderSocialIcon icon={fb} />
             <RenderSocialIcon icon={linkedIn} />
             <RenderSocialIcon icon={insta} />
           </Grid>
           <Grid item>
-            <Typography variant="subtitle2">
+            <Typography
+              variant="subtitle2"
+              align={matchesMD ? "center" : undefined}
+            >
               © 2020 All rights reserved. <br />
               MODERN TECH SOL CORPORATION LTD
             </Typography>
           </Grid>
           <Grid item>
-            <Typography style={{ color: "#fff" }}>
+            <Typography
+              style={{ color: "#fff" }}
+              align={matchesMD ? "center" : undefined}
+            >
               2nd office, 3rd floor, I-8 Markaz Islamabad, Pakistan, South Asia
             </Typography>
           </Grid>
@@ -147,15 +160,187 @@ export default function Footer() {
             <Grid item>
               <Typography variant="h5">Top Services</Typography>
             </Grid>
-            <Grid item marginTop="2">
-              <Typography variant="subtitle2" style={{ fontSize: 14 }}>
+            <Grid item>
+              <Typography className={classes.menuItem} variant="subtitle2">
                 Outsource Mobile App Development
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography className={classes.menuItem} variant="subtitle2">
+                Software Development
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography className={classes.menuItem} variant="subtitle2">
+                Web Application Development
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography className={classes.menuItem} variant="subtitle2">
+                Mobile Application Development
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography className={classes.menuItem} variant="subtitle2">
+                Android App Development
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography className={classes.menuItem} variant="subtitle2">
+                iOS App Development
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography className={classes.menuItem} variant="subtitle2">
+                QA & Testing
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography className={classes.menuItem} variant="subtitle2">
+                UI/UX Design
               </Typography>
             </Grid>
           </Grid>
         </Grid>
       </Grid>
       {/* Ended  2nd Column */}
+
+      {/* 3rd Column */}
+      <Grid item lg>
+        <Grid
+          item
+          container
+          alignItems={matchesMD ? "center" : undefined}
+          direction="column"
+          style={{
+            marginTop: "3em",
+            marginLeft: matchesMD ? "2em" : matchesLG ? "3em" : "5em",
+            maxWidth: "15em",
+          }}
+        >
+          <Grid item>
+            <Grid item>
+              <Typography variant="h5">Technologies</Typography>
+            </Grid>
+            <Grid item>
+              <Typography className={classes.menuItem} variant="subtitle2">
+                Progressive Web App Development
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography className={classes.menuItem} variant="subtitle2">
+                React Native App Development
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography className={classes.menuItem} variant="subtitle2">
+                Native App Development
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography className={classes.menuItem} variant="subtitle2">
+                JavaScript Development
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography className={classes.menuItem} variant="subtitle2">
+                Angular
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography className={classes.menuItem} variant="subtitle2">
+                React.js
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography className={classes.menuItem} variant="subtitle2">
+                C#/.NET Development
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography className={classes.menuItem} variant="subtitle2">
+                PHP
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography className={classes.menuItem} variant="subtitle2">
+                Python
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography className={classes.menuItem} variant="subtitle2">
+                Node.js
+              </Typography>
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
+      {/*End of  3rd Column */}
+
+      {/* 4th column  */}
+      <Grid item lg>
+        <Grid
+          item
+          container
+          alignItems={matchesMD ? "center" : undefined}
+          justify="center"
+          direction="column"
+          style={{
+            marginTop: "3em",
+            marginRight: matchesSM ? 0 : matchesMD ? "2em" : "5em",
+            maxWidth: "17em",
+          }}
+        >
+          <Grid item>
+            <Typography variant="h5" align={matchesMD ? "center" : undefined}>
+              Our Offices
+            </Typography>
+          </Grid>
+          <Grid item>
+            <Typography variant="subtitle2">I-8 MarKaz, Islamabad</Typography>
+          </Grid>
+          <Grid item>
+            <Typography
+              style={{ color: "#fff" }}
+              align={matchesMD ? "center" : undefined}
+            >
+              2nd office, 3rd floor, I-8 Markaz Islamabad, Pakistan, South Asia
+              <br />
+              +92 051 493 8119
+              <br /> dawoodahmad824@gmail.com
+            </Typography>
+          </Grid>
+          <Grid item style={{ marginTop: "3em" }}>
+            <Typography variant="subtitle2">G-13, Islamabad</Typography>
+          </Grid>
+          <Grid item>
+            <Typography
+              style={{ color: "#fff" }}
+              align={matchesMD ? "center" : undefined}
+            >
+              2nd office, 3rd floor, I-8 Markaz Islamabad, Pakistan, South Asia
+              <br />
+              +92 051 434 3455
+              <br /> iqtidargilani@gmail.com
+            </Typography>
+          </Grid>
+          <Grid item style={{ marginTop: "3em" }}>
+            <Typography variant="subtitle2">Mingora, Swat</Typography>
+          </Grid>
+          <Grid item>
+            <Typography
+              style={{ color: "#fff" }}
+              align={matchesMD ? "center" : undefined}
+            >
+              2nd office, 3rd floor, I-8 Markaz Islamabad, Pakistan, South Asia
+              <br />
+              +92 051 0796 636
+              <br /> kabir23@gmail.com
+            </Typography>
+          </Grid>
+        </Grid>
+      </Grid>
+      {/*End of  4th Column */}
     </Grid>
   );
 }
