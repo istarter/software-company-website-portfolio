@@ -10,6 +10,7 @@ import {
   TextField,
   Avatar,
 } from "@material-ui/core";
+import HeroSliderLanguges from "./HeroSliderLanguges";
 import HeroBg from "../../../assets/images/hero-bg.jpg";
 
 const useStyles = makeStyles((theme) => ({
@@ -65,6 +66,11 @@ export const HeroSection = () => {
           <Typography className={classes.heroSubTextTechnology}>
             WE KNOW ALL ABOUT THE LATEST TECHNOLOGY TRENDS
           </Typography>
+        </Grid>
+        <Grid item align="center">
+          <Grid item>
+            <HeroSliderLanguges />
+          </Grid>
         </Grid>
       </Grid>
     </Grid>
