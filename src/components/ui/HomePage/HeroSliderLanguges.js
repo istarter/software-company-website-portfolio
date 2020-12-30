@@ -1,5 +1,5 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, useTheme } from "@material-ui/core/styles";
 import { useMediaQuery } from "@material-ui/core";
 import GridList from "@material-ui/core/GridList";
 import GridListTile from "@material-ui/core/GridListTile";
@@ -15,6 +15,8 @@ import android from "../../../assets/images/android.png";
 import ios from "../../../assets/images/ios.png";
 import nodejs from "../../../assets/images/nodejs.png";
 import csharp from "../../../assets/images/cSharp.png";
+
+import theme from "../Theme";
 
 const useStyles = makeStyles((theme) => ({
   root: {

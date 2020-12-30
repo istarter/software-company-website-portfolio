@@ -29,6 +29,9 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "bold",
     [theme.breakpoints.down("sm")]: {
       fontSize: 10,
+      fontWeight: "normal",
+      paddingLeft: 16,
+      paddingRight: 16,
     },
   },
   heroSubTextTechnology: {
